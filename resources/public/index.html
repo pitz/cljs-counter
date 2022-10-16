@@ -1,0 +1,29 @@
+<!-- resources/public/index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="https://clojurescript.org/images/cljs-logo-icon-32.png" />
+    </head>
+    <body>
+        <div id="app">
+            <h4 class="header-text">A counter app</h4>
+            <div class="count-container">
+                <h2 class="count-value" id="count-value">0</h2>
+            </div>
+            <div class="btn-group">
+                <button id="minus">-</button>
+                <button id="plus">+</button>
+                <button id="step">Step</button>
+            </div>
+            <form>
+                <label for="step-input">Enter the step amount</label>
+                <input type="number" value="0" id="step-input" />
+            </form>
+        </div>
+        <!-- KEEP THIS SCRIPT TAG : IT LOADS YOUR APPLICATION CODE -->
+        <script src="cljs-out/dev-main.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+/* resources/public/css/style.css */
+body {
+  background: #2d3436;
+  padding: 0 24px;
+}
+
+* {
+  font-family: Roboto, Helvetica;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 72px;
+}
+
+.count-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #f5f6fa;
+  border-radius: 494px;
+  margin: 72px 0;
+}
+
+.header-text {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #f5f6fa;
+}
+
+.count-value {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 112px;
+  color: #f5f6fa;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #211c1b;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  height: 56px;
+  cursor: pointer;
+}
+
+#minus,
+#plus {
+  width: 56px;
+  margin-right: 32px;
+}
+
+#step {
+  width: unset;
+  padding: 16px 40px;
+  border-radius: 56px;
+}
+
+form {
+  margin: 56px 0;
+  width: 100%;
+  max-width: 295px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 250, 245, 0.79);
+  display: block;
+}
+
+input {
+  margin-top: 8px;
+  background: #2d3436;
+  border: 1px solid #f5f6fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #f5f6fa;
+  padding: 18px 24px;
+  outline: none;
+}
