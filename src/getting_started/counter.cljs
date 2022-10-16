@@ -19,7 +19,9 @@
   (js/Number (.. step-input -value)))
 
 (defn render-new-count [val]
-  (println " render-new-count :: val " val)
+  (when (and (< (js/Number (gdom/getTextContent count-value)) val)
+             (= val 10))
+    (js/alert "Hey, it's time to take a break!"))
   (gdom/setTextContent count-value val))
 
 (defn increase-count [app-state]
